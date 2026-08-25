@@ -8,6 +8,8 @@ Replacement values preserve the original length, character classes, digits, and 
 
 > **Important: local session data still contains the real secrets.** Mapping files at `~/.config/opencode/plugins/opencode_obfuscate/<sessionID>.json` also store real and fake values in plaintext. Session exports, backups, crash reports, and debug logs may contain real secrets as well. This plugin only protects content sent to the model; it is not local storage encryption or log redaction.
 
+<img width="573" height="305" alt="PixPin_2026-08-25_15-42-05" src="https://github.com/user-attachments/assets/5eb49a52-1cb6-4954-bbe0-4f0619851c8c" />
+
 ## How it works
 
 - Scans provider-bound messages through `experimental.chat.messages.transform` after the session has been stored and just before the model request is built.

@@ -1,0 +1,39 @@
+{
+  "name": "opencode_obfuscate",
+  "version": "0.2.1",
+  "description": "Keep secrets in OpenCode session storage while replacing them with persistent, session-scoped, structurally similar fake values before model requests.",
+  "type": "module",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src/index.ts",
+    "src/mapping-sync.ts",
+    "src/obfuscate.ts",
+    "src/patterns.ts",
+    "src/session-mapping.ts"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "opencode",
+    "plugin",
+    "security",
+    "secrets",
+    "obfuscate"
+  ],
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "@opencode-ai/plugin": "*"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.18.22",
+    "@types/node": "^22.0.0",
+    "vitest": "^3.2.4",
+    "typescript": "^5.6.0"
+  }
+}

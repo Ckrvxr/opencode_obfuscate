@@ -8,6 +8,9 @@
 
 > **重要：本地会话数据中仍然是真实密钥。** 映射文件默认保存在 `~/.config/opencode/plugins/opencode_obfuscate/<sessionID>.json`，并以明文保存真实值和假值。会话导出、备份、崩溃报告和调试日志也可能包含真实密钥。本插件只保护发给模型的内容，不是本地存储加密或日志脱敏工具。
 
+<img width="573" height="305" alt="PixPin_2026-08-25_15-42-05" src="https://github.com/user-attachments/assets/62ca0782-eb1e-41da-82f1-5fe254457a7a" />
+
+
 ## 工作原理
 
 - 在会话已经保存、模型请求即将构建时，通过 `experimental.chat.messages.transform` 扫描 provider 请求中的消息。
